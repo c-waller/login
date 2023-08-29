@@ -12,24 +12,18 @@ div
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(143, 157, 170); */
     height: 100vh;
 }
 
 form
 {
     border-radius: 20px;
-    /* border-style: solid; */
-    /* border-width: thin; */
     height: 50vh;
     width: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 10px 10px 20px rgb(0, 0, 0); */
-    /* background-color: rgb(255, 255, 255); */
-    
 }
 
 input
@@ -56,7 +50,61 @@ button
     background-color: black;
 }
 
+#emoji
+{
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes waving-hand 
+{
+    0% 
+    {
+        transform: rotate(20deg);
+    }
+    10%
+    {
+        transform: rotate(14deg);
+    }
+    20%
+    {
+        transform: rotate(-8deg);
+    }
+    30%
+    {
+        transform: rotate(14deg);
+    }
+    40%
+    {
+        transform: rotate(-4deg);
+    }
+    50%
+    {
+        transform: rotate(10deg);
+    }
+    60%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(1deg);
+    }
+}
+
 button:hover
 {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(29, 29, 29);
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: x-small;
+}
+
+a:hover
+{
+    color: black;
 }
