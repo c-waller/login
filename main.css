@@ -49,18 +49,28 @@ button
     border-radius: 10px;
     background-color: black;
 }
-
+#label
+{
+    display: flex;
+    align-items: center;
+}
 #emoji
 {
-    animation: waving-hand 2.5s infinite;
-    transform-origin: 70% 70%;
+    /* display: flex; */
+    /* background-color: aliceblue; */
+    animation: waving-hand 3s infinite;
+    font-size: 30px;
+}
+h1
+{
+    margin-right: 8px;
 }
 
 @keyframes waving-hand 
 {
     0% 
     {
-        transform: rotate(20deg);
+        transform: rotate(0deg);
     }
     10%
     {
@@ -88,23 +98,7 @@ button
     }
     100%
     {
-        transform: rotate(1deg);
+        transform: rotate(0deg);
     }
 }
 
-button:hover
-{
-    background-color: rgb(29, 29, 29);
-}
-
-a
-{
-    text-decoration: none;
-    color: rgb(179, 179, 179);
-    font-size: x-small;
-}
-
-a:hover
-{
-    color: black;
-}
