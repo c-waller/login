@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body {
+    background-color: #F3F2F0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Form styling */
+form {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 30px 30px rgba(0, 0, 0, 0.841);
+    height: 40vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login button */
+#email {
+    margin: 15px;
+    color: white;
+    border: none;
+    width: 205px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#google {
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    border: thin solid black;
+    width: 205px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: solid;
+    cursor: pointer;
+}
+
+/* Label and emoji */
+#label {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 8px;
+}
+
+/* Links */
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img
+{
+    height: 10px;
+}
