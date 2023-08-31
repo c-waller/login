@@ -1,22 +1,22 @@
-body
-{
+/* Reset some default styles */
+body {
     background-color: #F3F2F0;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-div
-{
+/* Main container */
+.login-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-form
-{
+/* Form styling */
+form {
     border-radius: 20px;
     background-color: white;
     box-shadow: 30px 30px rgba(0, 0, 0, 0.841);
@@ -28,22 +28,20 @@ form
     align-items: center;
 }
 
-input
-{
+/* Input fields */
+input {
     padding: 5px;
     margin: 10px;
     width: 200px;
     height: 30px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-width: thin;
+    border: thin solid black;
     border-radius: 10px;
     text-align: center;
     outline: none;
 }
 
-#login
-{
+/* Login button */
+#login {
     margin: 15px;
     color: white;
     border: none;
@@ -54,37 +52,41 @@ input
     cursor: pointer;
 }
 
-#label
-{
+/* Label and emoji */
+#label {
     display: flex;
     align-items: center;
 }
-#emoji
-{
+
+#emoji {
     animation: waving-hand 3s infinite;
     font-size: 30px;
 }
-h1
-{
+
+h1 {
     margin-right: 8px;
 }
 
-a
-{
+/* Links */
+a {
+    margin: 3.25px;
     text-decoration: none;
     color: black;
-    font-size: smaller;
+    font-size: 12px;
 }
 
-@keyframes waving-hand 
-{
-    0% {transform: rotate(0deg);}
-    10%{transform: rotate(14deg);}
-    20%{transform: rotate(-8deg);}
-    30%{transform: rotate(14deg);}
-    40%{transform: rotate(-4deg);}
-    50%{transform: rotate(10deg);}
-    60%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+a:hover {
+    text-decoration: underline;
 }
 
+/* Keyframe animation */
+@keyframes waving-hand {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
