@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Main container */
+/* Login container */
 .login-container {
     display: flex;
     align-items: center;
@@ -78,6 +78,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.red-border {
+    border: thin solid rgb(255, 0, 0);
 }
 
 /* Keyframe animation */
